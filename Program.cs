@@ -1,2 +1,15 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа
+//Решаем с помощью "/" и "%", со строками не работаем
+Console.WriteLine("----------Задание №1----------");
+Console.WriteLine("Напишите трехзначное число от 100 до 999");
+int num = int.Parse(Console.ReadLine()!);
+int result = 0;
+if (num < 1000 && num > 99)
+{
+    result = num / 10 % 10;
+    Console.WriteLine($"Вторая цифра числа {num} - это {result}");
+}
+else
+{
+    Console.WriteLine("Не выполнено условие: трехзначное число от 100 до 999");
+}
